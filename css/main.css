@@ -1,9 +1,26 @@
 body {
     margin: 60px auto;
     width: 70%;
+    background: black;
 }
+
+@font-face {
+    font-family: ColaborateLight;
+    src: url("../fonts/ColabLig.otf") format("opentype");
+    /**src: local('Hero Regular'), local('Hero'), url('fonts/Hero.otf') format('opentype');**/
+}
+
+@font-face {
+    font-family: Colaborate-Regular;
+    src: url("../fonts/ColabReg.otf") format("opentype");
+}
+
+p {
+    font-family: ColaborateLight;
+}
+
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family:ColaborateLight;
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -11,22 +28,65 @@ nav ul, footer ul {
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
+    margin-top:20px;
+    font-size:20px;
 }
 a {
     text-decoration: none;
     color: #999;
+    font-family: ColaborateLight;
+    /**font-size: 1.2em;**/
 }
 a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 8em;
+    font-family: ColaborateLight;
+    color: white;
+    margin-top:10px;
+    margin-bottom:40px;
 }
+
+h2 {
+    font-size: 3em;
+    font-family: ColaborateLight;
+    color: white;
+    margin-top:0px;
+    margin-bottom:10px;
+    margin-left:0px;
+    margin-right:0px;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: Colaborate-Regular;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+h4 {
+    font-family:ColaborateLight;
+    font-size: 23px;
+    color: #ffffff;
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    font-weight:normal;
+}
+
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #333;
+    color: #999999;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right:0px;
 }
 footer {
     border-top: 1px solid #d5d5d5;
@@ -40,4 +100,13 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+.nav {
+    padding-top: 50px;
+    clear: both;
+}
+
+.menuitem {
+    float: right;
 }
